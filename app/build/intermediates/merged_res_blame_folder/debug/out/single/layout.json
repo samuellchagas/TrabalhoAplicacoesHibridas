@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "C:\\Users\\Samuell\\Documents\\Projetos\\MasterQuizzfinal\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_subjects.xml",
+        "source": "C:\\Users\\Samuell\\Documents\\Projetos\\MasterQuizzfinal\\app\\src\\main\\res\\layout\\fragment_subjects.xml"
+    },
+    {
+        "merged": "C:\\Users\\Samuell\\Documents\\Projetos\\MasterQuizzfinal\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_login.xml",
+        "source": "C:\\Users\\Samuell\\Documents\\Projetos\\MasterQuizzfinal\\app\\src\\main\\res\\layout\\fragment_login.xml"
+    },
+    {
+        "merged": "C:\\Users\\Samuell\\Documents\\Projetos\\MasterQuizzfinal\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_main.xml",
+        "source": "C:\\Users\\Samuell\\Documents\\Projetos\\MasterQuizzfinal\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\Samuell\\Documents\\Projetos\\MasterQuizzfinal\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_select.xml",
+        "source": "C:\\Users\\Samuell\\Documents\\Projetos\\MasterQuizzfinal\\app\\src\\main\\res\\layout\\fragment_select.xml"
+    }
+]
