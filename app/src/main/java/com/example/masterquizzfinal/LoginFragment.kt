@@ -38,11 +38,11 @@ class LoginFragment : Fragment() {
 
         binding.loginEnter.setOnClickListener {
             viewLifecycleOwner.lifecycleScope.launch {
-//                getValidationFragment(
-//                    binding.loginEmail.text.toString(),
-//                    binding.loginPassword.text.toString()
-//                )
-                getValidationFragment("professor", "professor")
+                getValidationFragment(
+                    binding.loginEmail.text.toString(),
+                    binding.loginPassword.text.toString()
+                )
+//                getValidationFragment("professor", "professor")
             }
         }
     }
@@ -58,7 +58,7 @@ class LoginFragment : Fragment() {
         preference.edit { putString(BEARER, retornoApi.bearer) }
 
         if (response.isSuccessful) {
-            return findNavController().navigate(R.id.action_loginFragment_to_subjectFragment)
+            return findNavController().navigate(R.id.action_login_fragment_to_initQuiz)
         } else {
             return Toast.makeText(context, "USUARIO E/OU SENHA INVALIDOS", Toast.LENGTH_SHORT)
                 .show()

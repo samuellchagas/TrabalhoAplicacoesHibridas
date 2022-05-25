@@ -4,11 +4,14 @@ import android.app.AlertDialog
 import android.content.Context
 import android.graphics.Color
 import android.os.Bundle
+import android.os.Handler
+import android.os.Looper
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.lifecycleScope
+import androidx.navigation.fragment.findNavController
 import com.example.masterquizzfinal.LoginFragment.Companion.BEARER
 import com.example.masterquizzfinal.databinding.FragmentSubjectsBinding
 import com.google.android.material.snackbar.Snackbar
@@ -82,8 +85,12 @@ class SubjectFragment : Fragment() {
             AlertDialog
                 .Builder(requireContext())
                 .setTitle("Parabens")
-                .setMessage("Vc acertou $scorePoins de 10")
-                .show()
+                .setMessage("Vc acertou $scorePoins de 10\nToque em qualquer lugar da tela para voltar!")
+                .show().setOnDismissListener {
+                    Handler(Looper.getMainLooper()).postDelayed({
+                        findNavController().navigate(R.id.action_subject_fragment_to_initQuiz)},1000L )
+                }
+
         } else {
             var randomNumber = 0
             var clickAnswer = 0
@@ -134,7 +141,7 @@ class SubjectFragment : Fragment() {
                                         )
                                     } else if (clickAnswer == answerCorrect) {
                                         view.snackBar(
-                                            message = "Vc acertou a resposta",
+                                            message = "Você acertou a resposta",
                                             colorText = Color.BLACK,
                                             colorBackground = Color.GREEN
                                         )
@@ -149,7 +156,7 @@ class SubjectFragment : Fragment() {
                                         }
                                     } else {
                                         view.snackBar(
-                                            message = "Vc errou a resposta",
+                                            message = "Você errou a resposta",
                                             colorText = Color.BLACK,
                                             colorBackground = Color.RED
                                         )
@@ -195,4 +202,5 @@ class SubjectFragment : Fragment() {
             .setBackgroundTint(colorBackground)
             .show()
     }
+
 }

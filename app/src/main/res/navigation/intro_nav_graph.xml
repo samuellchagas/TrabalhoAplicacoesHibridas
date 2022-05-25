@@ -11,13 +11,26 @@
         android:label="LoginFragment"
         tools:layout="@layout/fragment_login">
         <action
-            android:id="@+id/action_loginFragment_to_subjectFragment"
-            app:destination="@id/subject_fragment" />
+            android:id="@+id/action_login_fragment_to_initQuiz"
+            app:destination="@id/initQuiz" />
     </fragment>
     <fragment
         android:id="@+id/subject_fragment"
         android:name="com.example.masterquizzfinal.SubjectFragment"
         android:label="SubjectFragment"
-        tools:layout="@layout/fragment_subjects" />
+        tools:layout="@layout/fragment_subjects" >
+        <action
+            android:id="@+id/action_subject_fragment_to_initQuiz"
+            app:destination="@id/initQuiz" />
+    </fragment>
+    <fragment
+        android:id="@+id/initQuiz"
+        android:name="com.example.masterquizzfinal.InitQuiz"
+        android:label="InitQuiz"
+        tools:layout="@layout/fragment_init_quiz">
+        <action
+            android:id="@+id/action_initQuiz_to_subject_fragment"
+            app:destination="@id/subject_fragment" />
+    </fragment>
 
 </navigation>

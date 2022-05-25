@@ -8,6 +8,10 @@
         "source": "C:\\Users\\Samuell\\Documents\\Projetos\\MasterQuizzfinal\\app\\src\\main\\res\\layout\\fragment_login.xml"
     },
     {
+        "merged": "C:\\Users\\Samuell\\Documents\\Projetos\\MasterQuizzfinal\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_init_quiz.xml",
+        "source": "C:\\Users\\Samuell\\Documents\\Projetos\\MasterQuizzfinal\\app\\src\\main\\res\\layout\\fragment_init_quiz.xml"
+    },
+    {
         "merged": "C:\\Users\\Samuell\\Documents\\Projetos\\MasterQuizzfinal\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_main.xml",
         "source": "C:\\Users\\Samuell\\Documents\\Projetos\\MasterQuizzfinal\\app\\src\\main\\res\\layout\\activity_main.xml"
     },

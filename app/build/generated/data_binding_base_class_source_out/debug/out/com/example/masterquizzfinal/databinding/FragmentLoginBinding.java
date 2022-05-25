@@ -7,8 +7,6 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
-import android.widget.Switch;
-import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
@@ -46,17 +44,10 @@ public final class FragmentLoginBinding implements ViewBinding {
   @NonNull
   public final ProgressBar progressCircular;
 
-  @NonNull
-  public final Switch switchRemember;
-
-  @NonNull
-  public final TextView textView27;
-
   private FragmentLoginBinding(@NonNull ConstraintLayout rootView, @NonNull ImageView imageView,
       @NonNull TextInputEditText loginEmail, @NonNull Button loginEnter,
       @NonNull TextInputEditText loginPassword, @NonNull TextInputLayout loginPasswordLayout,
-      @NonNull TextInputLayout loginUsernameLayout, @NonNull ProgressBar progressCircular,
-      @NonNull Switch switchRemember, @NonNull TextView textView27) {
+      @NonNull TextInputLayout loginUsernameLayout, @NonNull ProgressBar progressCircular) {
     this.rootView = rootView;
     this.imageView = imageView;
     this.loginEmail = loginEmail;
@@ -65,8 +56,6 @@ public final class FragmentLoginBinding implements ViewBinding {
     this.loginPasswordLayout = loginPasswordLayout;
     this.loginUsernameLayout = loginUsernameLayout;
     this.progressCircular = progressCircular;
-    this.switchRemember = switchRemember;
-    this.textView27 = textView27;
   }
 
   @Override
@@ -138,21 +127,8 @@ public final class FragmentLoginBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.switch_remember;
-      Switch switchRemember = ViewBindings.findChildViewById(rootView, id);
-      if (switchRemember == null) {
-        break missingId;
-      }
-
-      id = R.id.textView27;
-      TextView textView27 = ViewBindings.findChildViewById(rootView, id);
-      if (textView27 == null) {
-        break missingId;
-      }
-
       return new FragmentLoginBinding((ConstraintLayout) rootView, imageView, loginEmail,
-          loginEnter, loginPassword, loginPasswordLayout, loginUsernameLayout, progressCircular,
-          switchRemember, textView27);
+          loginEnter, loginPassword, loginPasswordLayout, loginUsernameLayout, progressCircular);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

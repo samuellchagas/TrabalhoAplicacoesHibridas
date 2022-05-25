@@ -2,6 +2,8 @@ com/example/masterquizzfinal/BuildConfig.java
  com.example.masterquizzfinal.BuildConfig
 com/example/masterquizzfinal/databinding/ActivityMainBinding.java
  com.example.masterquizzfinal.databinding.ActivityMainBinding
+com/example/masterquizzfinal/databinding/FragmentInitQuizBinding.java
+ com.example.masterquizzfinal.databinding.FragmentInitQuizBinding
 com/example/masterquizzfinal/databinding/FragmentLoginBinding.java
  com.example.masterquizzfinal.databinding.FragmentLoginBinding
 com/example/masterquizzfinal/databinding/FragmentSubjectsBinding.java
